@@ -1,6 +1,6 @@
 {
   "name": "react-responsive-css-grid",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A basic responsive grid framework using React and CSS Grid",
   "author": "beccanelson",
   "license": "MIT",
