@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import "./styles.css";
+import styles from "./styles.css";
 
 export interface IRowProps {
   className?: string;
@@ -15,7 +15,7 @@ export interface IColumnProps {
 }
 
 export const Row: React.SFC<IRowProps> = ({ columns, children, className }) => {
-  const classNames = [`o-grid-${columns}-columns`];
+  const classNames = [styles[`oGrid${columns}Columns`]];
   if (className) {
     classNames.push(className);
   }
@@ -35,13 +35,13 @@ export const Column: React.SFC<IColumnProps> = ({
     classNames.push(className);
   }
   if (sm) {
-    classNames.push(`o-span-${sm}`);
+    classNames.push(styles[`oSpan${sm}`]);
   }
   if (md) {
-    classNames.push(`o-span-${md}-med`);
+    classNames.push(styles[`oSpan${md}Med`]);
   }
   if (lg) {
-    classNames.push(`o-span-${lg}-lg`);
+    classNames.push(styles[`oSpan${lg}Lg`]);
   }
   return <div className={classNames.join(" ")}>{children}</div>;
 };
