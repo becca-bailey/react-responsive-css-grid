@@ -5,13 +5,13 @@
 ## Install
 
 ```bash
-npm install --save react-responsive-grid
+npm install --save react-responsive-css-grid
 ```
 
 or
 
 ```bash
-yarn add react-responsive-grid
+yarn add react-responsive-css-grid
 ```
 
 ## Usage
